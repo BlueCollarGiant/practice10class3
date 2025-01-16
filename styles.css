@@ -4,9 +4,11 @@
 
 .gallery {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #63B0CD;
-    padding: 0 10px;
+    gap: 20px;
+    padding: 10px 10px;
     margin: 0 auto;
     border-radius: 4px;
 }
@@ -14,7 +16,30 @@
 .image {
     background-color: #C1B098;
     border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+    width: calc(33.33% -20px);
+    height: 200px;
+    overflow: hidden;
     border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*chat gpt suggested this for design and i liked the look so i kept it*/
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px ) {
+    .image {
+        width:  calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px)   {
+    .image {
+        width: 100%;
+    }
 }
