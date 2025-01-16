@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    background-color: #63B0CD;
+    padding: 0 10px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.image {
+    background-color: #C1B098;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
